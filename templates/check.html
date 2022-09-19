@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %} Check {% endblock %}
+{% block content %}
+
+<div class="container">
+    <form action="/check" method="POST">
+        <div class="alert alert-success" role="alert">
+            歡迎 <span>{{ session['name'] }}</span> 的登入(check)
+        </div>
+    </from>
+</div>
+
+{% endblock %}
